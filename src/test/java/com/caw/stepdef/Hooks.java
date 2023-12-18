@@ -29,7 +29,7 @@ public class Hooks {
 	}
 
 	@SuppressWarnings("static-access")
-	@Before(value = "@addToCart", order = 1)
+	@Before(value = "@seacrchfunctionality", order = 1)
 	public void Searchproduct() throws Exception {
 		reuse.ReadProperties();
 		driver = reuse.getDriver(browserSelection);

@@ -2,7 +2,7 @@ Feature: As a user of the application i want to search product and sort search r
  Background:
   Given user is successfully naviaged to "https://www.amazon.in/"
   
-  @addToCart
+  @seacrchfunctionality
   Scenario Outline:  search functionality 
      When user enters "<product>" in searchbox in amazon
      And user click on searchbox in homepage
