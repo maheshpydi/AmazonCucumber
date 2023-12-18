@@ -18,7 +18,7 @@ public class ProductPage {
 	public void verifySearchResults(WebElement searchresults) {
 		int searchResults = Integer.parseInt(searchresults.getText().substring(13, 14).replace(",", ""));
 		productSearchResults = searchResults;
-		// ("1-16 of over ", "").replace(",", ""));
+
 		if (searchResults <= 0)
 			Assert.assertTrue("no search results found" + searchResults, false);
 		else
